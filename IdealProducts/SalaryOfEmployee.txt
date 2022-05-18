@@ -1,0 +1,5 @@
+Soumik Rahman, Post: Delivery Man, Salary-90000 Taka, Bonus-2000 Taka
+Farid Rahman, Post: Delivery Man, Salary-90000 Taka, Bonus-2000 Taka
+Masum Musfique, Post: Graphic Designer, Salary-150000 Taka, Bonus-5000 Taka
+Asif Iqbal, Post: Graphic Designer, Salary-150000 Taka, Bonus-4000 Taka
+Abdur Rahim, Post: Operation Mangaer, Salary-250000 Taka, Bonus-7000 Taka
