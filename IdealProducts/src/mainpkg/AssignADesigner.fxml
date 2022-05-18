@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AssignADesignerController">
+   <children>
+      <Label layoutX="52.0" layoutY="87.0" text="Card ID that Need to Customize:" />
+      <Label layoutX="52.0" layoutY="118.0" text="Client First Name:" />
+      <Label layoutX="52.0" layoutY="146.0" text="Client Last Name:" />
+      <Label layoutX="53.0" layoutY="173.0" text="Delivery Date:" />
+      <Label layoutX="53.0" layoutY="202.0" text="Delivery Address:" />
+      <Label layoutX="54.0" layoutY="231.0" text="Client's Custom Text:" />
+      <Label layoutX="54.0" layoutY="260.0" text="Assigned Designer Name:" />
+      <Label fx:id="cardIDLabel" layoutX="236.0" layoutY="87.0" text="Label" />
+      <Label fx:id="firstnameLabel" layoutX="155.0" layoutY="119.0" text="Label" />
+      <Label fx:id="lastNameLabel" layoutX="155.0" layoutY="146.0" text="Label" />
+      <Label fx:id="deliveryDateLabel" layoutX="136.0" layoutY="174.0" text="Label" />
+      <Label fx:id="deliveryAddressLabel" layoutX="155.0" layoutY="202.0" text="Label" />
+      <Label fx:id="clientCustomText" layoutX="175.0" layoutY="231.0" text="Label" />
+      <Button layoutX="55.0" layoutY="455.0" mnemonicParsing="false" onAction="#confirmAssignDesignerOnClick" text="Confirm Assign Designer" />
+      <Button layoutX="219.0" layoutY="455.0" mnemonicParsing="false" onAction="#cancelConfirmAssignDesignerOnClick" text="Cancel" />
+      <TextField fx:id="designerNameTextField" editable="false" layoutX="56.0" layoutY="290.0" />
+      <TableView fx:id="designerNameTableView" layoutX="55.0" layoutY="333.0" prefHeight="103.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="designerNameCol" prefWidth="180.0" text="Graphic Designer Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="271.0" layoutY="333.0" mnemonicParsing="false" onAction="#selectDesignerOnClick" text="Select Designer" />
+      <Label layoutX="52.0" layoutY="39.0" text="Assign A Graphic Designer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

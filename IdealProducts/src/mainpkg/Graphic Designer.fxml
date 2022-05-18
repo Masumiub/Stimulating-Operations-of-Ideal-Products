@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.GraphicDesignerController">
+   <children>
+      <Label layoutX="33.0" layoutY="41.0" text="Graphic Designer DashBoard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="624.0" layoutY="42.0" mnemonicParsing="false" onAction="#SignOutOnClick" text="SignOut" />
+      <Label fx:id="userIDLabel" layoutX="560.0" layoutY="46.0" text="UserName" textAlignment="RIGHT" />
+      <TableView fx:id="tableView" layoutX="35.0" layoutY="125.0" prefHeight="172.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="cardIDCol" prefWidth="51.0" text="Card ID" />
+          <TableColumn fx:id="firstNameCol" prefWidth="77.0" text="Client First Name" />
+            <TableColumn fx:id="lastNameCol" prefWidth="69.0" text="Client Last Name" />
+            <TableColumn fx:id="deliveryDateCol" prefWidth="98.0" text="Delivery Date" />
+            <TableColumn fx:id="deliveryAddressCol" prefWidth="106.0" text="Delivery Address" />
+            <TableColumn fx:id="customTextCol" prefWidth="123.0" text="Custom Text" />
+            <TableColumn fx:id="designerNameCol" prefWidth="118.0" text="Designer Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="34.0" layoutY="359.0" mnemonicParsing="false" onAction="#makeWorkScheduleOnClick" prefHeight="25.0" prefWidth="159.0" text="Make Work Schedule  " textAlignment="CENTER" />
+      <Button layoutX="551.0" layoutY="322.0" mnemonicParsing="false" onAction="#assignDeliveryManOnClick" text="Assign a delivery man" />
+      <Label layoutX="35.0" layoutY="97.0" text="Your Assigned Tasks:" />
+      <Button layoutX="34.0" layoutY="322.0" mnemonicParsing="false" onAction="#showMeetingScheduleOnClick" prefHeight="25.0" prefWidth="159.0" text="View Meeting Schedule" />
+      <MenuBar prefHeight="25.0" prefWidth="719.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="System">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#closeAppOnClick" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Meeting">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showMeetingOnClick" text="View Meeting Schedule" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showFAQsOnClick" text="FAQs" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

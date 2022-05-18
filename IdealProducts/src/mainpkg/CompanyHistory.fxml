@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CompanyHistoryController">
+   <children>
+      <Label layoutX="61.0" layoutY="54.0" text="Company History">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" editable="false" layoutX="61.0" layoutY="103.0" prefHeight="241.0" prefWidth="478.0" text="Ideal Cards Limited, specialised solely on production and distribution of personalized or pre-made Wedding and Party invitations for all communities since 2005.We produce wedding stationery from Screen to Lithographic and Digital print. Extensive finish from Die cutting, Laser cutting, Embossing, Debossing, Laminating, Hot stamping foil, Digital foil with many more." wrapText="true" />
+   </children>
+</AnchorPane>

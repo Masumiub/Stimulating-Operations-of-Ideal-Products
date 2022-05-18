@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.MainLoginSceneController">
+   <children>
+      <TextField fx:id="UserIDTextField" layoutX="149.0" layoutY="166.0" promptText="UserID" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="148.0" layoutY="246.0" prefWidth="150.0" promptText="Choose User Type" />
+      <Button layoutX="148.0" layoutY="287.0" mnemonicParsing="false" onAction="#SignInOnClick" prefHeight="25.0" prefWidth="149.0" text="SignIn" />
+      <Label layoutX="328.0" layoutY="217.0" text="Don't have an account?" textAlignment="CENTER" />
+      <Button layoutX="328.0" layoutY="242.0" mnemonicParsing="false" onAction="#SignUpOnClick" prefHeight="25.0" prefWidth="124.0" text="SignUp" />
+      <Label layoutX="227.0" layoutY="60.0" text="IdealProducts">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="System">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeAppOnClick" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Company">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showCompanyHistoryOnClick" text="History" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showFAQsOnClick" text="FAQs" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Line endX="100.0" layoutX="114.0" layoutY="77.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="484.0" layoutY="78.0" startX="-100.0" />
+      <Label layoutX="136.0" layoutY="95.0" text="Developed By: Md. Masum Musfique, ID: 1920582, Section: 03" />
+      <PasswordField fx:id="PasswordTextField" layoutX="149.0" layoutY="205.0" promptText="Enter Password" />
+   </children>
+</AnchorPane>

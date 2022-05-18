@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="mainpkg.ShowFAQsSceneController">
+   <children>
+      <TextArea fx:id="faqsTextArea" layoutX="52.0" layoutY="79.0" prefHeight="274.0" prefWidth="497.0" />
+      <Label layoutX="52.0" layoutY="53.0" text="FAQs:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="473.0" layoutY="51.0" mnemonicParsing="false" onAction="#ShowFAQsOnClick" text="Show FAQs" />
+   </children>
+</AnchorPane>

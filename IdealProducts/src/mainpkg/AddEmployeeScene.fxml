@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="731.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="mainpkg.AddEmployeeSceneController">
+   <children>
+      <TextField fx:id="userIDTextField" layoutX="47.0" layoutY="127.0" promptText="userID" />
+      <TextField fx:id="passwordTextField" layoutX="47.0" layoutY="155.0" promptText="password" />
+      <TextField fx:id="userType" layoutX="47.0" layoutY="187.0" text="Admin" />
+      <Button layoutX="138.0" layoutY="269.0" mnemonicParsing="false" onAction="#addUserOnClick" text="add user" />
+      <TextField fx:id="deliuserIDTextField" layoutX="205.0" layoutY="127.0" promptText="userID" />
+      <TextField fx:id="delipasswordTextField" layoutX="205.0" layoutY="155.0" promptText="password" />
+      <TextField fx:id="deliuserType" layoutX="205.0" layoutY="187.0" text="Delivery Man" />
+      <Button layoutX="250.0" layoutY="269.0" mnemonicParsing="false" onAction="#addDeliveryManUserOnClick" text="add delivery man" />
+      <TextField fx:id="fullNameTextField" layoutX="47.0" layoutY="219.0" promptText="full name" />
+      <TextField fx:id="delifullNameTextField" layoutX="205.0" layoutY="219.0" promptText="full name" />
+      <TextField fx:id="gduserIDTextField" layoutX="377.0" layoutY="127.0" promptText="userID" />
+      <TextField fx:id="gdpasswordTextField" layoutX="377.0" layoutY="155.0" promptText="password" />
+      <TextField fx:id="gduserType" layoutX="377.0" layoutY="187.0" text="Graphic Designer" />
+      <TextField fx:id="gdfullNameTextField" layoutX="377.0" layoutY="219.0" promptText="full name" />
+      <Button layoutX="440.0" layoutY="269.0" mnemonicParsing="false" onAction="#addGraphicDesignerUserOnClick" text="add designer" />
+      <TextField fx:id="opuserIDTextField" layoutX="536.0" layoutY="127.0" promptText="userID" />
+      <TextField fx:id="oppasswordTextField" layoutX="536.0" layoutY="155.0" promptText="password" />
+      <TextField fx:id="opuserType" layoutX="536.0" layoutY="187.0" text="Operation Manager" />
+      <TextField fx:id="opfullNameTextField" layoutX="536.0" layoutY="219.0" promptText="full name" />
+      <Button layoutX="598.0" layoutY="269.0" mnemonicParsing="false" onAction="#addOpManagerUserOnClick" text="add manager" />
+   </children>
+</AnchorPane>
