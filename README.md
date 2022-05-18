@@ -34,3 +34,14 @@ Md Masum Musfique; ID: 1920582; Sec:03
 # Assigning Delivery Man Scene:
 ![Screenshot (110)](https://user-images.githubusercontent.com/66321598/169061367-3ca614a5-2e94-45ec-a8f6-a8939be8042c.png)
 
+# Delivery Man DashBoard Scene:
+![Screenshot (114)](https://user-images.githubusercontent.com/66321598/169062182-fe43458c-2836-4752-af44-f9d7d6eee784.png)
+
+# Operation Manager DashBoard Scene:
+![Screenshot (111)](https://user-images.githubusercontent.com/66321598/169062632-c5032a79-0a32-4af9-9a67-4d768d3c49aa.png)
+
+# Meeting Schedule Scene:
+![Screenshot (112)](https://user-images.githubusercontent.com/66321598/169062645-d06fb13c-6ad0-489c-a591-5f96426ff0e6.png)
+
+# Adding New Card Scene:
+![Screenshot (113)](https://user-images.githubusercontent.com/66321598/169062656-44be59c9-5edb-473d-9a5e-b216a7fa67cf.png)
