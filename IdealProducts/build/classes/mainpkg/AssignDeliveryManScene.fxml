@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AssignDeliveryManSceneController">
+   <children>
+      <Label layoutX="52.0" layoutY="80.0" text="Card ID Need to Deliver:" />
+      <Label layoutX="52.0" layoutY="116.0" text="Client's First Name:" />
+      <Label layoutX="52.0" layoutY="147.0" text="Client's Last Name:" />
+      <Label layoutX="52.0" layoutY="179.0" text="Delivery Date:" />
+      <Label layoutX="52.0" layoutY="213.0" text="Delivery Address:" />
+      <Label layoutX="52.0" layoutY="244.0" text="Customization Status:" />
+      <Label layoutX="52.0" layoutY="277.0" text="Delivery Man Name:" />
+      <Button layoutX="55.0" layoutY="456.0" mnemonicParsing="false" onAction="#confirmAssignDeliveryManOnClick" prefHeight="25.0" prefWidth="209.0" text="Confirm Assign Delivery Man" />
+      <Button layoutX="278.0" layoutY="456.0" mnemonicParsing="false" onAction="#cancelAssigningOnClick" text="Cancel" />
+      <TextField fx:id="deliveryManNameTextField" editable="false" layoutX="181.0" layoutY="273.0" />
+      <ComboBox fx:id="customizationStatusComboBox" layoutX="181.0" layoutY="240.0" prefWidth="150.0" promptText="Select One" />
+      <Label fx:id="cardIDLabel" layoutX="192.0" layoutY="80.0" text="Card ID" />
+      <Label fx:id="firstNameLabel" layoutX="161.0" layoutY="116.0" text="Card ID" />
+      <Label fx:id="lastNameLabel" layoutX="161.0" layoutY="147.0" text="Card ID" />
+      <Label fx:id="deliveryDateLabel" layoutX="137.0" layoutY="179.0" text="Card ID" />
+      <Label fx:id="deliveryAddressLabel" layoutX="157.0" layoutY="213.0" text="Card ID" />
+      <Button layoutX="180.0" layoutY="313.0" mnemonicParsing="false" onAction="#selectDeliveryManOnClick" prefHeight="25.0" prefWidth="149.0" text="Select DeliveryMan" />
+      <Label layoutX="52.0" layoutY="41.0" text="Assign A Delivery Man">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="deliverymanTableView" layoutX="55.0" layoutY="346.0" prefHeight="99.0" prefWidth="275.0">
+        <columns>
+          <TableColumn fx:id="deliveryManNameCol" prefWidth="232.0" text="Delivery Man Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

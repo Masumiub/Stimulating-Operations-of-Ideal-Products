@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ClientDashBoardSceneController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="System">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeAppOnClick" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Feedback">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sendFeedbackOnClick" text="Send Feedback" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="ReadMe" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="357.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="24.0" text="Client DashBoard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView" layoutX="34.0" layoutY="188.0" prefHeight="138.0" prefWidth="533.0">
+               <columns>
+                  <TableColumn fx:id="cardID" prefWidth="75.0" text="Card ID" />
+                  <TableColumn fx:id="cardType" prefWidth="90.0" text="Card Type" />
+                  <TableColumn fx:id="cardPrice" prefWidth="99.0" text="Price(Taka)" />
+                  <TableColumn fx:id="DesignNameCol" prefWidth="99.0" text="Designer Name" />
+               </columns>
+            </TableView>
+            <Button layoutX="504.0" layoutY="25.0" mnemonicParsing="false" onAction="#SignOutOnClick" text="SignOut" />
+            <Label fx:id="userIDLabel" layoutX="119.0" layoutY="56.0" text="UserName" />
+            <Button layoutX="457.0" layoutY="143.0" mnemonicParsing="false" onAction="#SearchCardOnClick" prefHeight="25.0" prefWidth="110.0" text="Search Card" />
+            <Label layoutX="31.0" layoutY="56.0" text="Welcome Back!" />
+            <ComboBox fx:id="cardTypeComboBox" layoutX="147.0" layoutY="143.0" prefHeight="25.0" prefWidth="157.0" />
+            <Label layoutX="34.0" layoutY="147.0" text="Choose Card Type:" textAlignment="RIGHT" />
+            <Label layoutX="34.0" layoutY="115.0" text="What kind of card you are looking for? Choose Card Type &amp; Search!" />
+            <Button layoutX="422.0" layoutY="341.0" mnemonicParsing="false" onAction="#changeScene" text="Select Card for Purchase" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

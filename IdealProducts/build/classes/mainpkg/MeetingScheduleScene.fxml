@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="519.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="mainpkg.MeetingScheduleSceneController">
+   <children>
+      <Label layoutX="54.0" layoutY="59.0" text="Meeting Schedule with Admin:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="meetScheduleTableView" layoutX="54.0" layoutY="108.0" prefHeight="198.0" prefWidth="410.0">
+         <columns>
+            <TableColumn fx:id="meetingTopicCol" prefWidth="147.0" text="Meeting Topic" />
+            <TableColumn fx:id="meetingDateCol" prefWidth="126.0" text="Meeting Date" />
+            <TableColumn fx:id="meetingTimeCol" prefWidth="126.0" text="Meeting Time" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.SalaryOfEmployeeSceneController">
+   <children>
+      <TextArea fx:id="showSalaryTextArea" editable="false" layoutX="69.0" layoutY="95.0" prefHeight="110.0" prefWidth="464.0" />
+      <CheckBox fx:id="updateSalaryCheckBox" layoutX="69.0" layoutY="223.0" mnemonicParsing="false" onAction="#updateEditSalaryFileOnCheckBox" text="Update Salary &amp; Bonus:" />
+      <Button layoutX="69.0" layoutY="63.0" mnemonicParsing="false" onAction="#loadSalaryFileOnClick" text="Choose Salary File" />
+      <TextArea fx:id="updateSalaryTextArea" layoutX="69.0" layoutY="251.0" prefHeight="110.0" prefWidth="464.0" />
+      <Button layoutX="69.0" layoutY="373.0" mnemonicParsing="false" onAction="#updateSalaryFileOnClick" text="Update Salary" />
+      <Button layoutX="456.0" layoutY="33.0" mnemonicParsing="false" onAction="#goBackOnClick" prefHeight="25.0" prefWidth="77.0" text="Go Back" />
+   </children>
+</AnchorPane>
